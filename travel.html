@@ -93,20 +93,21 @@
 
   <script src="assets/js/main.js"></script>
 </body>
-</html>/* ===========================
-Travel & Stay side-by-side
-=========================== */
+</html>
 
-.grid-2 {
-display: grid;
-grid-template-columns: 1fr 1fr;
-gap: 3rem;
-align-items: start;
-}
+<link rel="stylesheet" href="assets/css/style.css" />
 
-/* Mobile fallback */
-@media (max-width: 900px) {
-.grid-2 {
- grid-template-columns: 1fr;
-}
-}
+<style>
+  .container.grid-2{
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  @media (max-width: 900px){
+    .container.grid-2{
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
