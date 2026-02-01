@@ -93,4 +93,20 @@
 
   <script src="assets/js/main.js"></script>
 </body>
-</html>
+</html>/* ===========================
+Travel & Stay side-by-side
+=========================== */
+
+.grid-2 {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 3rem;
+align-items: start;
+}
+
+/* Mobile fallback */
+@media (max-width: 900px) {
+.grid-2 {
+ grid-template-columns: 1fr;
+}
+}
